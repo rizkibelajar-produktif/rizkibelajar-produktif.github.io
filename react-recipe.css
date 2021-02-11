@@ -138,7 +138,8 @@ span {
     }
 
     .brand {
-        width: 50vw;
+        display: flex;
+        flex: 1;
         text-align: center;
         display: flex;
         align-items: center;
@@ -150,7 +151,8 @@ span {
     }
 
     .menu {
-        width: 50vw;
+        display: flex;
+        flex: 1;
     }
 
     .material-icons {
