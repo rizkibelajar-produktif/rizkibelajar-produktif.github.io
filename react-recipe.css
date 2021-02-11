@@ -73,7 +73,6 @@
   flex: 1;
   height: 65vh;
   background-color: white;
-  background-image: url(./brooke.jpg);
   background-size: cover;
 }
 
@@ -81,7 +80,6 @@
   flex: 1;
   height: 65vh;
   background-color: whitesmoke;
-  background-image: url(./melissa-walker.jpg);
   background-size: cover;
 }
 
