@@ -39,7 +39,6 @@
 }
 
 .menu-items {
-    margin-left: 30.5vw;
     color: brown;
 }
 
@@ -73,7 +72,7 @@
   flex: 1;
   height: 65vh;
   background-color: white;
-  background-image: url(brooke.jpg);
+  background-image: url(./images/brooke.jpg);
   background-size: cover;
 }
 
@@ -81,8 +80,7 @@
   flex: 1;
   height: 65vh;
   background-color: whitesmoke;
-  background-image: url(melissa-walker.jpg);
-  
+  background-image: url(./images/melissa-walker.jpg);
   background-size: cover;
 }
 
@@ -136,11 +134,12 @@ span {
         rgba(238, 186, 16, 0.5));
         color: midnightblue;
         display: flex;
-        height: 5vh;
+        height: 3.95vh;
     }
 
     .brand {
-        width: 50vw;
+        display: flex;
+        flex: 1;
         text-align: center;
         display: flex;
         align-items: center;
@@ -152,7 +151,8 @@ span {
     }
 
     .menu {
-        width: 50vw;
+        display: flex;
+        flex: 1;
     }
 
     .material-icons {
@@ -168,7 +168,8 @@ span {
         position: absolute;
         left: 0;
         width: 100vw; 
-        height: 57vh;
+        height: auto;
+        padding-bottom: 3.5vh;
         background: linear-gradient(to right top, 
         rgba(255, 255, 255, 0.9), 
         rgba(238, 186, 16, 0.5));
@@ -182,14 +183,15 @@ span {
         clip-path: circle(1000px at 90% -10%);
         opacity: 1;
         cursor: pointer;
+        margin-top: 4.85vh;
     }
 
     .menu-items::after {
         display: block;
         content: "Close";
         position: absolute;
-        left: 86vw;
-        top: -24px;
+        left: 85vw;
+        top: 10px;
         background:lightgoldenrodyellow;
         color: red;
         border-radius: 1rem;
@@ -197,7 +199,7 @@ span {
     }
 
     .menu-items li {
-        margin-top: 6.5vh;
+        margin-top: 3.5vh;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -208,8 +210,7 @@ span {
 
     .menu-items a {
         border: 6px solid lightgoldenrodyellow;
-        box-shadow: 3px 3px 3px whitesmoke;
-        text-shadow: 1px 1px midnightblue;
+        filter: drop-shadow(3px 2px 1px midnightblue);
         width: 35vw;
         padding: 3px;
         text-align: center;
@@ -244,4 +245,3 @@ span {
     }
 
 }
-
