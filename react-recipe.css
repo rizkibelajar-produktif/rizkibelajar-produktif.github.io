@@ -126,7 +126,7 @@ span {
 }
 
 .item h6 {
-  font-size: larger;
+  font-size: medium;
 }
 
 @media screen and (max-width: 768px) {
@@ -243,7 +243,10 @@ span {
     
     .item {
         width: 65%;
-        font-size: small;
+    }
+    
+    .item h6 {
+        font-size: medium;
     }
 
     .main-menu.fadeMainMenu {
