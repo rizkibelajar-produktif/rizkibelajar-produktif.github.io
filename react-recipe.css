@@ -72,7 +72,7 @@
   flex: 1;
   height: 65vh;
   background-color: white;
-  background-image: url(./images/brooke.jpg);
+  background-image: url(/images/brooke.jpg);
   background-size: cover;
 }
 
