@@ -9,6 +9,7 @@
 }
 
 .nav-container {
+    font-family: 'Suranna', serif;
     background-color: rgb(247, 224, 12);
     background: linear-gradient(to right top, 
     rgba(255, 255, 255, 0.9), 
@@ -40,20 +41,22 @@
 
 .menu-items {
     color: brown;
+    margin-top: -2.5vh;
+    margin-left: 17vw;
 }
 
 .menu-items li {
     list-style: none;
     display: inline-block;
-    justify-content: space-around;
-    align-items: center;
     font-size: larger;
+    width: 7.5vw;
+    background: transparent;
 }
 
 .menu-items a {
     border: 6px solid lightgoldenrodyellow;
     box-shadow: 3px 3px 3px whitesmoke;
-    padding: 3px;
+    padding: 0 13px;
     text-align: center;
 }
 
@@ -72,7 +75,7 @@
   flex: 1;
   height: 65vh;
   background-color: white;
-  background-image: url(/images/brooke.jpg);
+  background-image: url(./images/brooke.jpg);
   background-size: cover;
 }
 
@@ -117,7 +120,7 @@ span {
 .item {
   width: 15vw;
   padding: 10px;
-  border-radius: 2rem;;
+  border-radius: 2rem;
   background-color: whitesmoke;
   text-align: center;
 }
@@ -169,7 +172,7 @@ span {
         left: 0;
         width: 100vw; 
         height: auto;
-        padding-bottom: 3.5vh;
+        padding-bottom: 1.5vh;
         background: linear-gradient(to right top, 
         rgba(255, 255, 255, 0.9), 
         rgba(238, 186, 16, 0.5));
@@ -184,6 +187,7 @@ span {
         opacity: 1;
         cursor: pointer;
         margin-top: 4.85vh;
+        margin-left: 0vw;
     }
 
     .menu-items::after {
@@ -200,16 +204,19 @@ span {
 
     .menu-items li {
         margin-top: 3.5vh;
+        margin: 4vh auto;
         list-style: none;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        font-size: larger;
+        font-size: medium;
+        background: transparent;
     }
 
     .menu-items a {
-        border: 6px solid lightgoldenrodyellow;
+        background:rgba(218, 165, 32, 0.445);
+        border: 2px solid lightgoldenrodyellow;
         filter: drop-shadow(3px 2px 1px midnightblue);
         width: 35vw;
         padding: 3px;
@@ -245,3 +252,4 @@ span {
     }
 
 }
+
