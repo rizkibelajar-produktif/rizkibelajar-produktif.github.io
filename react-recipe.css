@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(247, 224, 12);
+    background: linear-gradient(to right top, 
+    rgba(255, 255, 255, 0.9), 
+    rgba(238, 186, 16, 0.5));
+}
+
 .brand {
     font-family: 'Satisfy', cursive;
 }
@@ -42,7 +49,7 @@
 .menu-items {
     color: brown;
     margin-top: -2.5vh;
-    margin-left: 17vw;
+    margin-left: 0vw;
 }
 
 .menu-items li {
@@ -244,15 +251,242 @@ span {
     .item {
         width: 65%;
     }
-    
-    .item h6 {
-        font-size: smaller;
-    }
+
+        .item h6 {
+            font-size: medium;
+        }
 
     .main-menu.fadeMainMenu {
         opacity: 0;
         transition: all 2s ease-in-out;
     }
 
-}
+    .content {
+        width: 96vw;
+        height: 28vh;
+        margin: auto;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 
+    .content h5 {
+        color: white;
+        text-shadow: 3px solid teal;
+        font-size: larger;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .content ul li {
+        list-style: none;
+        margin: auto;
+        
+    }
+
+    .content ul li img {
+        float: left;
+        width: 5vw;
+        height: 5vh;
+        margin: 0 13px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        text-align: center;
+
+    }
+
+    .content ul li span {
+        display: block;
+    }
+
+    .clear{
+        clear: both;
+    }
+
+    #quote {
+        font-family: 'Satisfy', cursive;
+        color: teal;
+        margin: 1.2rem;
+    }
+
+    .wheele {
+        position: relative;
+        width: 65vw;
+        height: 35.5vh;
+        margin: 10vh auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid rgb(5, 146, 132);
+        border-radius: 50%;
+        animation: myWheele 1s 1 ;
+        background: url(./images/jimi-filipovski-unsplash.jpg) 35%;
+        background-size: cover;
+    }
+
+    @keyframes myWheele {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        } 
+    }
+    .wheele .menubox {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        background: white;
+        border: 3px solid rgb(5, 146, 132);
+        border-radius: 50%;
+    }
+
+    .wheele .menubox:nth-child(1) {
+        top: -8.5vh;
+        background: url(./images/bebek-peking.jpg);
+        background-size: 120px 120px;
+        cursor: pointer;
+    }
+
+    .wheele .menubox:nth-child(2) {
+        bottom: -8.5vh;
+        background: url(./images/Soto-Betawi.jpg);
+        background-size: 120px 120px;
+        cursor: pointer;
+    }
+
+    .wheele .menubox:nth-child(3) {
+        left: -8.5vh;
+        background: url(./images/seafood-richard-iwaki-063luRCNFz0-unsplash.jpg);
+        background-size: 120px 120px;
+        cursor: pointer;
+    }
+
+    /* .overlay:target .wheele .menubox:nth-child(3) {
+        opacity: 1;
+    } */
+
+    .wheele .menubox:nth-child(4) {
+        right: -8.5vh;
+        background: url(./images/steak-iman-zaker-Et1rVF1YJe8-unsplash.jpg);
+        background-size: 120px 120px;
+        cursor: pointer;
+    }
+
+    .wheele .menubox h6 {
+        color: midnightblue;
+        text-align: center;
+        font-size: medium;
+        padding: 3px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 5px;
+        position: absolute;
+        top: 40%;
+        left: 16%;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 15%;
+        bottom: 15%;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+
+    .overlay .close {
+        margin-left: 5px; 
+        font-size: 12px;
+        padding: 6.5px;
+        color: rgba(255, 255, 255, 0.918);
+        background-color: rgba(25, 25, 112, 0.212);
+        box-shadow:1px 1px 3px teal;
+    }
+
+    .overlay a {
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+     .overlay .close:target{
+        background-color: tomato;
+    }
+
+    /* .overlay:target {
+        transform: scale(0);
+    } */
+
+    .overlay .full-panel img.fade {
+        background-image: url(./images/pexels/pexels-ponyo-sakana-3662126.jpg);
+        /* display: none; */
+    }
+   
+
+    .full-panel {
+        position: relative;
+        width: 100%;
+        height: 325px;
+        background-color: rgba(25, 25, 112, 0.212);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .full-panel img {
+        display: flex;
+        width: 65%;
+        height: 75%;
+        border: 3px solid ;
+        cursor: pointer;
+    }
+
+    .full-panel .info {
+        position: absolute;
+        bottom: 6.5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(245, 255, 250, 0.698);
+        padding: .5rem;
+    }
+
+    .preview-panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex: 1;
+        width: 100%;
+        height: auto;
+        padding-bottom: 3.3vh;
+        overflow-x: scroll;
+        background-color: rgba(25, 25, 112, 0.212);
+    }
+
+    .preview-panel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .preview-panel {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .preview-panel img {
+        display: flex;
+        width: 120px;
+        height: 120px;
+        border: 3px solid honeydew;
+        margin-left: 5px;
+        filter: opacity(0.6);
+    }
+
+    .preview-panel img.active:target {
+        filter: opacity(1);
+    }
+
+    .preview-panel #gambar-4.fade {
+        display: none;
+    }
+    
+}
