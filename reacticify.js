@@ -37,7 +37,6 @@ slider.addEventListener("click", function(ev){
               
 
               if (number > 0) {
-                console.log("Now the number I = " + number);
                 cancel.style.opacity = "1";
                 el.children[0].innerHTML = alt;
               }
@@ -58,7 +57,6 @@ slider.addEventListener("click", function(ev){
                 el.children[1].innerHTML = "-";
                 total.children[2].innerHTML = "-";
                 price.innerHTML = "-";
-                console.log("Now the number II = " + number);
                 number = 0;
               }
 
