@@ -39,6 +39,7 @@ body {
 
 .menu {
     width: 50vw;
+    display: none;
 }
 
 .material-icons {
@@ -139,6 +140,117 @@ span {
 .item h6 {
   font-size: 16px;
   font-family: 'Aubrey', cursive;
+}
+
+.left {
+    display: none;
+}
+
+.slider .right {
+    position: relative;
+    margin: 3rem auto;
+    margin-bottom: 0rem !important;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    border: 3px solid snow;
+    background-color: lightgray;
+    background: url(./images/cemilan-minuman/unsplash-cake/deva-williamson-S2jw81lfrG0-unsplash.jpg) no-repeat;
+    background-size: 250px 250px;
+}
+
+.slider .right h6 {
+    background-color: rgba(51, 51, 51, 0.678);
+    color: snow;
+    text-align: center;
+    padding: 2px;
+}
+
+.slider .right h5 {
+    position: absolute;
+    font-size: 12px;
+    bottom: 0.5vh;
+    left : 32.5%;
+    text-align: center;
+    background-color:rgba(245, 255, 250, 0.698);
+    padding: 2px 13px;
+
+}
+
+.slider .right h5 button {
+    background-color: tomato;
+    padding: 2px;
+    font-size: 11px;
+    color: white;
+    border: none;
+    width: 50px;
+    margin-left: 80%;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+
+.preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    border: 1px solid lightgray;
+    overflow-x: scroll;
+    border: none;
+}
+
+.preview {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.preview::-webkit-scrollbar {
+    display: none;
+}
+
+.preview::after {
+    display: none;
+}
+
+.preview img {
+    border: 3px solid snow;
+    margin: .5% 0;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.preview span {
+    opacity: 0;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-bottom: 3vh;
+}
+
+footer img {
+    position: absolute;
+    display: flex;
+    left: 47%;
+    top: -3.5vh;
+}
+
+footer h3 {
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: saddlebrown;
+}
+
+footer h5 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 18px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
